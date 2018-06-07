@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pho_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pho_title"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/phoTitle"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pho_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/phoNameLabel"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pho_title" />
+
+    <TextView
+        android:id="@+id/pho_name"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pho_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/pho_title" />
+
+    <TextView
+        android:id="@+id/pho_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/phoEmailLabel"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pho_name_label" />
+
+    <TextView
+        android:id="@+id/pho_email"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pho_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/pho_name" />
+</android.support.constraint.ConstraintLayout>

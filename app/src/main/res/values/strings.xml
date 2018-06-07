@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">mbl404_dck_week_1</string>
+    <string name="appName">Phoenix</string>
+    <string name="buttonExecute">Execute</string>
+
+    <string name="maNameField">Enter Name</string>
+    <string name="maEmailField">Enter E-mail Address</string>
+
+    <string name="phoTitle">I am a Phoenix!</string>
+    <string name="phoNameLabel">Name:</string>
+    <string name="phoEmailLabel">E-Mail:</string>
 </resources>

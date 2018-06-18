@@ -8,19 +8,37 @@ import android.widget.TextView;
 
 public class PhoenixActivity extends AppCompatActivity {
 
+    //Activity variables.
+
     private String name, email;
+
+    //Layout items.
+
     private TextView textName, textEmail;
+
+    //Activity entry point.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Initialize activity layout.
+
         setContentView(R.layout.phoenix_activity);
+
+        //Call function to retrieve and parse intent from parent activity.
+
         getIncomingIntent();
+
+        //Bind java variable layout items to layout xml items.  Set text to activity variables.
+
         textName = (TextView) findViewById(R.id.pho_name);
         textName.setText(name);
         textEmail = (TextView) findViewById(R.id.pho_email);
         textEmail.setText(email);
     }
+
+    //onOptionsItemSelected populates the "previous" arrow in the activity bar.
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -32,6 +50,11 @@ public class PhoenixActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    /*
+    getIncomingIntent sets the activity variables by calling the getIntent function and the
+    associated key values that were defined in the parent activity.
+     */
 
     private void getIncomingIntent(){
         this.name = getIntent().getStringExtra("name");
